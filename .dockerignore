@@ -1,0 +1,6 @@
+.venv
+.log
+Dockerfile
+Readme.md
+compose.yml
+.gitignore

@@ -1,0 +1,15 @@
+services:
+  flet:
+    build: .
+    image: flet/infraapp
+    ports:
+      - "8999:8999"
+    volumes:
+      - ./:/app
+    container_name: InfraApp
+    networks:
+      - InfraApp
+networks:
+  InfraApp:
+    driver: bridge
+  
